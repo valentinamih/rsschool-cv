@@ -1,0 +1,68 @@
+body {
+    margin: auto;
+    border: 2px dotted #e9dcdc;
+    width: 80%
+}
+
+p, ul, ol{
+    margin: 10px;
+    font-family: sans-serif;
+}
+
+#photo {
+    float: left;
+    margin: 5px;
+    width: 140px;
+    border-radius: 100%;
+}
+
+#contacts {
+    margin-left : 11em;
+    padding: 1em;
+    width: 21%;
+    font-family: sans-serif;
+}
+a {
+    color: palevioletred;
+}
+
+#contacts 
+h3 {
+    margin: 0;
+}
+
+#header {
+    top: 0;
+    margin-bottom: 1em;
+    height: fit-content;
+    background: #e9dcdc; 
+}
+
+#name {
+    margin: 0;
+    padding-top: .5em;
+    margin-left: 192px;
+    font-family: monospace;
+    color: #44584b;
+}
+
+
+.content
+h2 {
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(to left, transparent 0%, #85848b);
+    border-image-slice: 1;
+    margin: 5px;
+    font-family:monospace;
+    color: #44584b
+}
+
+footer {
+    background: #e9dcdc;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#logo {
+    width: 50px;
+}
