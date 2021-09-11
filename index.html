@@ -1,28 +1,42 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>CV Mikhailova V.V.</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header id="header">
-            <img id="photo" alt="photo" src="./photo.jpg">
-            
-            <h1 id="name">Mikhailova Valentina Vladimirovna</h1>
-            <div id="contacts">
-                <h3>Contacts:</h3>
-                +79312834907 - preferred means of communication <br> 
-                <a href="mailto:vally-arrty@mail.ru">vally-arrty@mail.ru</a>
-            </div>
-            
-        </header>
 
-        <div id="content-box">
-            <div class="content">
+<head>
+    <title>CV Mikhailova V.V.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+
+<body>
+    <header id="header">
+        <img id="photo" alt="photo" src="./photo.jpg">
+
+        <h1 id="name">Mikhailova Valentina Vladimirovna</h1>
+        <section id="contacts">
+            <h3>Contacts:</h3>
+            <ul>
+                <li>+79312834907 - preferred means of communication</li>
+                <li><a href="mailto:vally-arrty@mail.ru">vally-arrty@mail.ru</a></li>
+            </ul>
+        </section>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#self-education">Self-education</a>
+            <a href="#languages">Languages</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id='about' class="content">
             <h2>About</h2>
-             <p>Adaptive, responsible, able to work in team. I have no experience in IT, but I am ready and able to learn while working.</p>
-        </div>
-        <div class="content">
+            <p>Adaptive, responsible, able to work in team. I have no experience in IT, but I am ready and able to learn
+                while working.</p>
+        </section>
+        <section id='skills' class="content">
             <h2>Skills</h2>
             <div>
                 <ul>
@@ -34,47 +48,80 @@
                     <li>WJavaScript</li>
                     <li>React JS</li>
                     <li>npm</li>
-                </ul>   
+                </ul>
             </div>
-        </div>
-        <div class="content">
+            <article id="examples">
+                <h3>Code examles</h3>
+                <p>There's a task to write a function,
+                    that takes a name as an argument and returns the first 3 or 4 letters as a nickname
+                    (if the 3rd letter is a vowel, return the first 4 letters)
+                </p>
+                <pre><code class="language-js">
+                    function nicknameGenerator(name) {
+                        if (name.length &lt; 4) {
+                          return 'Error: Name too short'
+                        }
+                        let vowels = ['e','u','i','o','a']
+                        for (let i = 0; i &lt; vowels.length; i++) {
+                          if (name[2] === vowels[i]) {
+                          return name.slice(0, 4)
+                          }
+                        } 
+                        return name.slice(0,3)
+                      }
+                </code></pre>
+            </article>
+
+            <article id="calculator">
+                <h3>Math calculators</h3>
+                <p>Also, for example, my two first training projects - mathematical calculators.</p>
+                <a href="https://valushkalove.github.io/calculator/" target="_blank"> <img class="calc-img" src="calc1.PNG" alt=""> </a>
+                <a href="https://valushkalove.github.io/math-calculator/" target="_blank" > <img class="calc-img" src="calc.PNG" alt=""> </a>
+            </article>
+
+        </section>
+        <section id='education' class="content"> 
             <h2>Education</h2>
-             <div>
-                 <ol>
+            <div>
+                <ol>
                     <li>2017: Technical School of the Food Industry, <br>
                         Technology of fermentation production and winemaking, Technician-technologist;</li>
                     <li> 2020: Peter the Great St.Petersburg Polytechnic University, <br>
-                        Higher School of Biotechnology and Food Technologies, Biotechnology</li> 
-                 </ol>
-             </div>
-        </div>
+                        Higher School of Biotechnology and Food Technologies, Biotechnology</li>
+                </ol>
+            </div>
+        </section>
 
-        <div class="content">
+        <section id='self-education' class="content">
             <h2>Self-education</h2>
-             <div>
-                 <ul>
-                   <li> <a href="https://learn.javascript.ru">Learn Javascript;</a></li>
-                   <li> <a href="https://ru.code-basics.com/languages/javascript">Code-basics Javacript course;</a></li>
-                   <li> "React Way of Samurai" by IT-kamasutra</li>
+            <div>
+                <ul>
+                    <li> <a href="https://learn.javascript.ru">Learn Javascript;</a></li>
+                    <li> <a href="https://ru.code-basics.com/languages/javascript">Code-basics Javacript course;</a>
+                    </li>
+                    <li> "React Way of Samurai" by IT-kamasutra</li>
                 </ul>
             </div>
-        </div>
+        </section>
 
-        <div class="content">
+        <section id='languages' class="content">
             <h2>Languages</h2>
-             <ul>
-                 <li>Russian (native speaker)</li>
-                 <li>English (B1) good reading and listening skills, but not enough of speaking practice</li>
-             </ul>
-        </div>
+            <ul>
+                <li>Russian (native speaker)</li>
+                <li>English (B1) good reading and listening skills, but not enough of speaking practice</li>
+            </ul>
+        </section>
 
-        </div>
-        
-        
-        <footer>
-            github: <a href="https://github.com/valushkalove">valushkalove</a>  <br>
-            2021 <br>
-            <a href="https://rs.school/js/"><img id="logo" src="./rs_school_logo.svg" alt="rsschool logo"></a>
-        </footer>
-    </body>
+    </main>
+
+
+    <footer>
+        github:<a  href="https://github.com/valushkalove">valushkalove</a> <br>
+        2021 <br>
+        <a href="https://rs.school/js/"><img id="rs-logo" src="./rs_school_logo.svg" alt="rsschool logo"></a>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+
 </html>
