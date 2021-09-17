@@ -37,20 +37,6 @@ h3 {
     color: #44584b;
 }
 
-nav {
-    margin: auto;
-    margin-bottom: 10px;
-    border-top: 1px solid transparent;
-    border-image: linear-gradient(to left, transparent 0%, #85848b);
-    border-image-slice: 1;
-
-}
-
-nav a {
-    font-size: large;
-    text-decoration: none;
-    color: #44584b
-}
 
 #photo {
     float: left;
@@ -101,3 +87,57 @@ footer {
     font-size: larger;
     color: #44584b
 }
+
+
+  
+  .nav {
+    overflow: hidden;
+    background-color: #535553;
+    box-shadow: 0px 2px 1px 1px #535553
+  }
+  
+  .nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 5px 5px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .nav a:hover {
+    background-color: rgb(221, 206, 218);
+    color: black;
+  }
+  
+  .active {
+    background-color: palevioletred;
+    color: white;
+  }
+  
+  .nav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 740px) {
+    .nav a:not(:first-child) {display: none;}
+    .nav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 750px) {
+    .nav.responsive {position: relative;}
+    .nav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .nav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }

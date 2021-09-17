@@ -3,9 +3,11 @@
 
 <head>
     <title>CV Mikhailova V.V.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script>hljs.highlightAll();</script>
 </head>
 
@@ -21,13 +23,19 @@
                 <li><a href="mailto:vally-arrty@mail.ru">vally-arrty@mail.ru</a></li>
             </ul>
         </section>
-        <nav>
-            <a href="#about">About</a>
+        <nav class="nav" id="topnav">
+            <a href="#about" class="active">About</a>
             <a href="#skills">Skills</a>
             <a href="#education">Education</a>
             <a href="#self-education">Self-education</a>
             <a href="#languages">Languages</a>
+            
+            <a href="javascript:void(0);" class="icon" onclick="onClick()">
+              <i class="fa fa-bars"></i>
+            </a>
         </nav>
+
+        
     </header>
 
     <main>
@@ -74,8 +82,13 @@
 
             <article id="calculator">
                 <h3>Math calculators</h3>
-                <p>Also, for example, my two first training projects - mathematical calculators.</p>
+                <p>Also, for example, my two first training projects - mathematical calculators. 
+                    In the first one, you can select a shape and calculate its area and perimeter. Technologies used: html, css, js</p>
                 <a href="https://valushkalove.github.io/calculator/" target="_blank"> <img class="calc-img" src="calc1.PNG" alt=""> </a>
+                <p>The second calculator is an algebraic one. 
+                    It allows you to find the smallest common multiple, root of the quadratic equation,
+                    common divisors of numbers, the biggest divisor of numbers, all divisors of a number and calculate whether the numbers are a Pythagorean triple.
+                     Technologies used: html, css, js</p>
                 <a href="https://valushkalove.github.io/math-calculator/" target="_blank" > <img class="calc-img" src="calc.PNG" alt=""> </a>
             </article>
 
