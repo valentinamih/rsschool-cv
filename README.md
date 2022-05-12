@@ -1,1 +1,2 @@
-# rsschool-cv
+https://valentinamih.github.io/rsschool-cv/
+
