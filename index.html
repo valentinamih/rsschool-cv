@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <title>CV Mikhailova V.V.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,61 +10,55 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script>hljs.highlightAll();</script>
 </head>
-
 <body>
-    <header id="header">
-        <img id="photo" alt="photo" src="./photo.jpg">
-
-        <h1 id="name">Mikhailova Valentina Vladimirovna</h1>
-        <section id="contacts">
-            <h3>Contacts:</h3>
+<header class="header">
+    <img class="header__photo" alt="photo" src="./photo.jpg">
+    <h1 class="header__name">Mikhailova Valentina Vladimirovna</h1>
+    <section class="header__contacts">
+        <h2>Contacts:</h2>
+        <ul>
+            <li>+79312834907 - preferred means of communication</li>
+            <li><a href="mailto:vally-arrty@mail.ru">vally-arrty@mail.ru</a></li>
+        </ul>
+    </section>
+    <nav class="nav" id="topnav">
+        <a href="#about" class="active">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#self-education">Self-education</a>
+        <a href="#languages">Languages</a>
+        <a href="javascript:void(0);" class="icon" onclick="onClick()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+</header>
+<main>
+    <section id='about' class="content">
+        <h2>About</h2>
+        <p>Adaptive, responsible, able to work in team. I have no experience in IT, but I am ready and able to learn
+            while working.</p>
+    </section>
+    <section id='skills' class="content">
+        <h2>Skills</h2>
+        <div>
             <ul>
-                <li>+79312834907 - preferred means of communication</li>
-                <li><a href="mailto:vally-arrty@mail.ru">vally-arrty@mail.ru</a></li>
+                <li>Css</li>
+                <li>HTML</li>
+                <li>JavaScript</li>
+                <li>React JS</li>
+                <li>Redux</li>
+                <li>TypeScript</li>
+                <li>npm</li>
+                <li>Git</li>
             </ul>
-        </section>
-        <nav class="nav" id="topnav">
-            <a href="#about" class="active">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#education">Education</a>
-            <a href="#self-education">Self-education</a>
-            <a href="#languages">Languages</a>
-            
-            <a href="javascript:void(0);" class="icon" onclick="onClick()">
-              <i class="fa fa-bars"></i>
-            </a>
-        </nav>
-
-        
-    </header>
-
-    <main>
-        <section id='about' class="content">
-            <h2>About</h2>
-            <p>Adaptive, responsible, able to work in team. I have no experience in IT, but I am ready and able to learn
-                while working.</p>
-        </section>
-        <section id='skills' class="content">
-            <h2>Skills</h2>
-            <div>
-                <ul>
-                    <li>Webstorm</li>
-                    <li>VS Code</li>
-                    <li>Git</li>
-                    <li>Css</li>
-                    <li>HTML</li>
-                    <li>WJavaScript</li>
-                    <li>React JS</li>
-                    <li>npm</li>
-                </ul>
-            </div>
-            <article id="examples">
-                <h3>Code examles</h3>
-                <p>There's a task to write a function,
-                    that takes a name as an argument and returns the first 3 or 4 letters as a nickname
-                    (if the 3rd letter is a vowel, return the first 4 letters)
-                </p>
-                <pre><code class="language-js">
+        </div>
+        <article class="examples">
+            <h3>Code examples</h3>
+            <p>There's a task to write a function,
+                that takes a name as an argument and returns the first 3 or 4 letters as a nickname
+                (if the 3rd letter is a vowel, return the first 4 letters)
+            </p>
+            <pre><code class="language-js">
                     function nicknameGenerator(name) {
                         if (name.length &lt; 4) {
                           return 'Error: Name too short'
@@ -79,63 +72,60 @@
                         return name.slice(0,3)
                       }
                 </code></pre>
-            </article>
-
-            <article id="calculator">
-                <h3>Math calculators</h3>
-                <p>Also, for example, my two first training projects - mathematical calculators. 
-                    In the first one, you can select a shape and calculate its area and perimeter. Technologies used: html, css, js</p>
-                <a href="https://valushkalove.github.io/calculator/" target="_blank"> <img class="calc-img" src="calc1.PNG" alt=""> </a>
-                <p>The second calculator is an algebraic one. 
-                    It allows you to find the smallest common multiple, root of the quadratic equation,
-                    common divisors of numbers, the biggest divisor of numbers, all divisors of a number and calculate whether the numbers are a Pythagorean triple.
-                     Technologies used: html, css, js</p>
-                <a href="https://valushkalove.github.io/math-calculator/" target="_blank" > <img class="calc-img" src="calc.PNG" alt=""> </a>
-            </article>
-
-        </section>
-        <section id='education' class="content"> 
-            <h2>Education</h2>
-            <div>
-                <ol>
-                    <li>2017: Technical School of the Food Industry, <br>
-                        Technology of fermentation production and winemaking, Technician-technologist;</li>
-                    <li> 2020: Peter the Great St.Petersburg Polytechnic University, <br>
-                        Higher School of Biotechnology and Food Technologies, Biotechnology</li>
-                </ol>
-            </div>
-        </section>
-
-        <section id='self-education' class="content">
-            <h2>Self-education</h2>
-            <div>
-                <ul>
-                    <li> <a href="https://learn.javascript.ru">Learn Javascript;</a></li>
-                    <li> <a href="https://ru.code-basics.com/languages/javascript">Code-basics Javacript course;</a>
-                    </li>
-                    <li> "React Way of Samurai" by IT-kamasutra</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id='languages' class="content">
-            <h2>Languages</h2>
+        </article>
+        <article class="examples">
+            <h3>Math calculators</h3>
+            <p>Also, for example, my two first training projects - mathematical calculators.
+                In the first one, you can select a shape and calculate its area and perimeter. Technologies used: html,
+                css, js</p>
+            <a href="https://valentinamih.github.io/calculator/" target="_blank"> <img class="calc-img" src="calc1.PNG"
+                                                                                       alt=""> </a>
+            <p>The second calculator is an algebraic one.
+                It allows you to find the smallest common multiple, root of the quadratic equation,
+                common divisors of numbers, the biggest divisor of numbers, all divisors of a number and calculate
+                whether the numbers are a Pythagorean triple.
+                Technologies used: html, css, js</p>
+            <a href="https://valentinamih.github.io/math-calculator/" target="_blank"> <img class="calc-img"
+                                                                                            src="calc.PNG" alt=""> </a>
+        </article>
+    </section>
+    <section id='education' class="content">
+        <h2>Education</h2>
+        <div>
+            <ol>
+                <li>2017: Technical School of the Food Industry, <br>
+                    Technology of fermentation production and winemaking, Technician-technologist;
+                </li>
+                <li> 2020: Peter the Great St.Petersburg Polytechnic University, <br>
+                    Higher School of Biotechnology and Food Technologies, Biotechnology
+                </li>
+            </ol>
+        </div>
+    </section>
+    <section id='self-education' class="content">
+        <h2>Self-education</h2>
+        <div>
             <ul>
-                <li>Russian (native speaker)</li>
-                <li>English (B1) good reading and listening skills, but not enough of speaking practice</li>
+                <li><a href="https://learn.javascript.ru">Learn Javascript;</a></li>
+                <li><a href="https://ru.code-basics.com/languages/javascript">Code-basics Javacript course;</a>
+                </li>
+                <li> "React Way of Samurai" by IT-kamasutra</li>
             </ul>
-        </section>
-
-    </main>
-
-
-    <footer>
-        github:<a  href="https://github.com/valushkalove">valushkalove</a> <br>
-        2021 <br>
-        <a href="https://rs.school/js/"><img id="rs-logo" src="./rs_school_logo.svg" alt="rsschool logo"></a>
-    </footer>
-    
-    <script src="script.js"></script>
+        </div>
+    </section>
+    <section id='languages' class="content">
+        <h2>Languages</h2>
+        <ul>
+            <li>Russian (native speaker)</li>
+            <li>English (B1)</li>
+        </ul>
+    </section>
+</main>
+<footer class="footer">
+    github:<a href="https://github.com/valentinamih">valentinamih</a> <br>
+    2021 <br>
+    <a href="https://rs.school/js/"><img class="footer__rs-logo" src="./rs_school_logo.svg" alt="rsschool logo"></a>
+</footer>
+<script src="script.js"></script>
 </body>
-
 </html>
